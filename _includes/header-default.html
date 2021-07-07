@@ -45,12 +45,8 @@
                                     {% endfor %}
                                     </ul>
                                 </li>
-                            {% elsif nav.name == "Publications" %}
-                                <li><a href="publications.html">{{nav.name}}</a></li>
-                            {% elsif nav.name == "Home" %}
-                                <li><a href="index.html">{{nav.name}}</a></li>
                             {% else %}
-                                <li><a href="{{site.url}}/{{nav.link}}">{{nav.name}}</a></li>
+                                <li><a href="{{nav.link}}">{{nav.name}}</a></li>
                             {% endif %}
                         {% endfor %}
                     </ul>
