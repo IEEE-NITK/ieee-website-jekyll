@@ -1,0 +1,21 @@
+---
+layout: default
+title: Achievememts
+--- 
+
+<div class="colorlib-intro colorlib-bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 colorlib-heading">
+                {% for item in site.data.achievements %}
+                <h2>List of Achievements by {{ item[0] }}</h2>
+                <ul class="animate-box">
+                    {% for i in item[1] %}
+                        <li><strong>"{{ i.title }}"</strong> - {{ i.details }}</li><br>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
