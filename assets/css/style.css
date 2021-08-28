@@ -998,7 +998,7 @@ input[type=search] {
 }
 article {
   background: #fff;
-  padding: 35px;
+  padding: 20px 35px 35px 35px;
   margin-bottom: 40px;
   -webkit-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
@@ -1025,7 +1025,8 @@ article .admin span {
 }
 article p.author-wrap {
   position: relative;
-  margin-top: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px !important;
 }
 article p.author-wrap .author-img {
   position: absolute;
@@ -1044,6 +1045,11 @@ article p.author-wrap .author-img img{
 }
 article p.author-wrap .author {
   padding-left: 40px;
+  color: #303133;
+  font-size: 12px;
+}
+
+article p.author-wrap .date {
   color: #303133;
   font-size: 12px;
 }
@@ -1747,6 +1753,11 @@ input[type="text"] {
     display: block;
   }
 }
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
