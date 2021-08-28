@@ -243,9 +243,9 @@
                 author_img_url = `https://ieee.nitk.ac.in/blog/assets/img/authors/${str}.jpeg`;
 
                 html_str += `<div class="card-deck"><div><article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">`;
-                html_str += `<h2><a href="`+ blog[items].url +`">` + blog[items].title + `</a></h2><p class="author-wrap">`;
-                html_str += `<span class="author-img" style="background-image: url(https://ieee.nitk.ac.in/blog/assets/img/authors/${str}.jpeg), url(https://ieee.nitk.ac.in/blog/assets/img/authors/blog-author.jpg);"></span>`;    
-                html_str += `<span class="author">by &nbsp` + blog[items].author + `&nbsp; | &nbsp;` + blog[items].date.split(" ")[1] + `&nbsp` + blog[items].date.split(" ")[0] + `,` + blog[items].date.split(" ")[2] + `</span></p>` ;
+                html_str += `<h2><a href="${blog[items].url}">${blog[items].title}</a></h2><p class="author-wrap">`;
+                html_str += `<span class="author-img" style="background-image: url(${blog[items].author_image}), url(https://ieee.nitk.ac.in/blog/assets/img/authors/blog-author.jpg);"></span>`;    
+                html_str += `<span class="author">by &nbsp${blog[items].author}&nbsp; | &nbsp;${blog[items].date.split(" ")[1]}&nbsp${blog[items].date.split(" ")[0]}, ${blog[items].date.split(" ")[2]} </span></p>` ;
                 html_str += `<div class="category">`;
 
                 var tag = blog[items].category;
@@ -253,7 +253,7 @@
                 const tag_items = tag.split(",");
                 for (tag_item in tag_items) {
                     if (tag_items[tag_item] != ""){
-                    html_str += `<a href="https://ieee.nitk.ac.in/blog/tags/#${tag_items[tag_item].trim().split(" ").join("-").toLowerCase()}">` + tag_items[tag_item] + `</a>`;
+                    html_str += `<a href="https://ieee.nitk.ac.in/blog/tags/#${tag_items[tag_item].trim().split(" ").join("-").toLowerCase()}">${tag_items[tag_item]}</a>`;
                     }
                 } 
 
