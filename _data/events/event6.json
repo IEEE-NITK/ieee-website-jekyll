@@ -1,12 +1,13 @@
 {
-    "title": "IEEE Praelium",
-    "date": "6th October 2018",
-    "sig": "IEEE & Web Enthusiasts Club",
-    "description": "IEEE NITK, in association with the Web Enthusiasts Club conducted Praelium, an online coding contest that would help learn all the tricks and skills necessary to ace interviews and dominate contests on platforms such as CodeChef, Hackerrank and contests such as IEEE Xtreme, ACM ICPC etc. <br> Praelium was a preliminary contest that would allow participants to grasp all the nuances necessary when participating in a contest as big as IEEE Xtreme or the Engineer Coding contests. The contest was conducted a week before the IEEE Xtreme contest keeping in mind this contest would serve as a mock for the actual Xtreme contest. The contest was open to all IEEE members and Bangalore Section. The contest has 88 teams of 3 members each and first three places were bagged by NITK students.",
+    "title": "Silicon Maze 2021",
+    "thumbnails": ["siliconmaze2021.jpg"],
+    "date": "26th - 27th June 2021",
+    "sig": "CompSoc",
+    "description": "Conducted in collaboration with Web Enthusiast's Club NITK, this was a 24 hour programming contest based on various disciplines of Computer Science like Data Structures and Algorithms, Systems, Machine Learning and Development. Themed around the Avengers, the 4 tracks were held on 3 different platforms: Algorithms on CodeDrills, Machine Learning on Kaggle, Systems and Development on HackerEarth, with equal weightage given to all tracks. Participants could take part in teams of three.",
     "links": [
         {
-            "title": "Facebook post",
-            "url": "https://www.facebook.com/IEEENITK/photos/a.530250543696387/1879768518744576/?type=3&theater"
+            "title": "Silicon Maze Website",
+            "url": "https://silicon-maze.github.io"
         }
     ]
 }

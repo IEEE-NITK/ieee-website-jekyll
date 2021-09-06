@@ -1,12 +1,7 @@
 {
-    "title": "Knowledge Sharing Session | Public Key Cryptography",
-    "date": "15th Januuary, 2019",
+    "title": "Resume Building Session",
+    "thumbnails": ["no_image.jpg"],
+    "date": "11th June 2021",
     "sig": "All SIGs",
-    "description": "Knowledge Sharing Session introducing Public Key Cryptography(PKC) <br> - Discussion on RSA- principal algorithm used in PKC <br> - Applications of RSA in creating Digital Certificates <br> - Attended by 20 student members <br> - Subsequent sessions on Elliptic Curve Cryptography and Diffie Hellman Key Exchange to be taken up",
-    "links": [
-        {
-            "title": "Facebook post",
-            "url": "https://www.facebook.com/IEEENITK"
-        }
-    ]
+    "description": "An interactive session on how to build an outstanding resume, conducted for the first and second year student members who will soon be pursuing internship opportunities. The session covered what should and shouldn't be put on a resume, along with a walkthrough of some templates to get started. The session was conducted by Chandran N, final year executive member at IEEE NITK Student Branch."
 }

@@ -1,13 +1,7 @@
 {
-    "title": "ENLIGHTEN - IEEE DAY Celebrations",
-    "date": "1st October, 2019",
-    "sig": "All SIGs",
-    "description": "Mr. Gajendra Singh is the director of Storage Technologies Ltd. who talked on \"NAND Flash and SSD Memories\". <br> - Aimed at providing an insight into an emerging technology and research field to undergraduate students.",
-    "links": [
-        {
-            "title": "Facebook post",
-            "url": "https://www.facebook.com/IEEENITK"
-        }
-    ]
-}    
-
+    "title": "WiE Manifest",
+    "thumbnails": ["manifest_stm.jpg", "manifest_jma.jpg"],
+    "date": "15th - 16th May 2021",
+    "sig": "WiE",
+    "description": "A 2-day non technical event consisting of:<ul><li><strong> Survive The Minute</strong> - A JAM Event where participants are given a minute to put forward their points on the assigned topics.</li></ul>"
+}

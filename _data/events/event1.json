@@ -1,12 +1,7 @@
 {
-  "title": "Embedathon",
-  "date": "19th – 20th January 2020",
-  "sig": "By CAS/SPS",
-  "description": "Embedathon is a 24- hour embedded system hackathon challenge hosted by IEEE NITK student branch in association with CAS Society and IEEE Bangalore Section. It presents you with interesting problem statements to ensure a fun-filled learning experience. This is the second edition of the event promising to be bigger and better. In addition to the hackathon, a workshop will also be conducted prior to the final event to enhance your experience with us! Open to Bangalore and Kerala Section as well!",
-  "links": [
-      {
-          "title": "Event Page",
-          "url": "https://ieee.nitk.ac.in/embedathon.html"
-      }
-  ]
+  "title": "Mystify 2021",
+  "thumbnails" : ["mystify2021.jpg"],
+  "date": "09th – 11th April 2021",
+  "sig": "Piston",
+  "description": "A 48-hour puzzle competition involving logic questions to test the reasoning, deductions and analytical skills of participants. The event was aimed at freshman students to provide them with a fun and enthralling puzzle competition."
 }
