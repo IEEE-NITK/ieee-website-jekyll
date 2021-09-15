@@ -12,7 +12,6 @@ function changeImg(id, n) {
             nextImage = $(`#${id}`).children("div").last();
     }
 
-    console.log(nextImage.html())
     image.hide();
     nextImage.show();
 

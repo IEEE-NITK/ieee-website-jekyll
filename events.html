@@ -12,7 +12,8 @@ js: /assets/js/events.js
 <div class="colorlib-blog">
   <div class="container">
       <div class="animate-box fade" id="events">
-        {% for event in site.data.events reversed %}
+        {% assign sorted_events = site.data.events | sort %}
+        {% for event in sorted_events reversed %}
         {% assign idx = forloop.index0 | modulo: 3 %}
         {% if idx == 0 %}
           <div class="event-card-deck">
