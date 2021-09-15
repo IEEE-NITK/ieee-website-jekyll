@@ -1,9 +1,84 @@
 .event-card {
   background-color: #fff;
-  margin: 10px;
-  padding: 5% 20px;
-  height: 10rem;
+  margin: 20px;
+  width: 33.3333% !important;
   cursor: pointer;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  float: left !important;
+  position: relative;
+}
+
+.card-image-slideshow {
+  position: relative;
+  margin: auto;
+}
+
+.event-image {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.imgFade {
+  -webkit-animation-name: imgFade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: imgFade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes imgFade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes imgFade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.event-image img {
+  height: 350px !important;
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-card .card-title {
+  padding: 20px 35px 0px 35px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.event-card .card-links {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .event-card:hover {
@@ -48,14 +123,24 @@
     width: 60%;
   }
   .event-card {
-    margin: 20px 10px;
+    margin: 20px 20px 20px 0px;
   }
 }
 
-@media only screen and (min-width: 991px) {
-  .event-card .event-expand {
-    display: none;
+@media only screen and (max-width: 986px) {
+  .event-card {
+    display: block !important;
+    width: 100% !important;
   }
+  .event-card-deck {
+    display: block !important;
+    flex: none;
+  }
+}
+
+.event-card-deck {
+  display: flex;
+  width: 100% !important;
 }
 
 /* .modal {

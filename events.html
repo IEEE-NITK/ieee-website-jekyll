@@ -6,32 +6,50 @@ js: /assets/js/events.js
 ---
 <div id="google_translate_element"></div>
 
+{% assign numEvents = site.data.events | size %}
+
 <!-- Events -->
-<div class="colorlib-intro">
-  <div class="container" id="events-div">
-    <div class="row">
-      <div class="animate-box fadeInUp animated-fast " id="events">
-        {% for event in site.data.events %}
-        <div class="col-md-6">
-        <div class="card" data-target="#event-modal-{{forloop.index}}">
-          <div class="card-image">
-            <img src="/assets/img/events/{{event[1].thumbnails[0]}}" alt="{{event[1].title}}">
+<div class="colorlib-blog">
+  <div class="container">
+      <div class="animate-box fade" id="events">
+        {% for event in site.data.events reversed %}
+        {% assign idx = forloop.index0 | modulo: 3 %}
+        {% if idx == 0 %}
+          <div class="event-card-deck">
+        {% endif %}
+        <div class="event-card" data-target="#event-modal-{{forloop.index}}">
+          <div class="card-image-slideshow" id="{{event[1].title | slugify }}-images">
+            {% for img_name in event[1].thumbnails %}
+              <div class="imgFade event-image">
+                <img src="/assets/img/events/{{img_name}}" alt="{{event[1].title}}">
+              </div>
+            {% endfor %}
+
+            {% if event[1].thumbnails.size > 1 %}
+              <a class="prev" onclick="changeImg(`{{event[1].title | slugify}}-images`, -1)">&#10094;</a>
+              <a class="next" onclick="changeImg(`{{event[1].title | slugify}}-images`, 1)">&#10095;</a>
+            {% endif %}
           </div>
+          <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div> -->
           <div class="card-title">
             <h2>{{event[1].title}}</h2>
           </div>
           <div class="card-links">
-            <button type="button" class="btn btn-primary btn-outline" data-toggle="modal"
-                  data-target="#event-modal-{{forloop.index}}">
-                  Read More
-              </button>
+            <button type="button" class="btn btn-primary btn-outline" data-toggle="modal" data-target="#event-modal-{{forloop.index}}">
+              Read More
+            </button>
           </div>
         </div>
-        </div>
+        {% if idx == 2 or forloop.last %}
+          </div>
+        {% endif %}
         {% endfor %}
 
       </div>
-    </div>
   </div>
 </div>
 </div>
@@ -39,7 +57,7 @@ js: /assets/js/events.js
 
 
 <!-- Modals -->
-{% for event in site.data.events %}
+{% for event in site.data.events reversed %}
 <div class="modal fade" id="event-modal-{{forloop.index}}" tabindex="-1" role="dialog"
   aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
