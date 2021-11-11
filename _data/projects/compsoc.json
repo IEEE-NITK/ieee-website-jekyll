@@ -1,5 +1,5 @@
 {
-	"2018" : [
+	"2019" : [
 		{
 			"Title": "Learning to Communicate in Multi-Agent Systems",
 			"Abstract": "We are exploring the application of Reinforcement Learning in Multi-Agent systems to learn communication protocols. We are using value-based and policy-based models to learn emergent communication protocols in competitive and collaborative environments. We also plan to study the applicability of these learning methods on real world problems, like communication in a swarm of autonomous vehicles.",
@@ -74,7 +74,7 @@
 		}
 	],
 
-	"2019" : [
+	"2018" : [
 		{
 			"Title": "Arcade Game Solver",
 			"Abstract": "Arcade Game Solver using Deep Reinforcement Learning was about building game agents that use reinforcement learning to play arcade games and hence learn optimal behaviour. It included working with Deep Learning and Convolutional Neural Networks in Python.",
