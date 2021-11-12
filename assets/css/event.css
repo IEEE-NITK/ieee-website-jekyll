@@ -139,7 +139,7 @@
 }
 
 .event-card-deck {
-  display: flex;
+  display: flex !important;
   width: 100% !important;
 }
 
