@@ -5,7 +5,20 @@
     },
     {
 		"name": "Team",
-		"link": "team.html"
+		"teams": [
+      {
+          "name": "CompSoc",
+          "link": "compsoc.html"
+      },
+      {
+          "name": "Diode",
+          "link": "diode.html"
+      },
+      {
+          "name": "Piston",
+          "link": "piston.html"
+      }                                          
+  ]
     },
     {
 		"name": "SIGs",
