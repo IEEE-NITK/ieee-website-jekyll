@@ -18,3 +18,19 @@ jobs:
 
       - name: Run HTML Proofer
         run: htmlproofer --assume-extension ./_site --disable-external
+
+  deploy:
+    name: "Deploy to GitHub Pages"
+    if: ${{ github.ref_name == github.event.repository.default_branch }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          enable_jekyll: true
