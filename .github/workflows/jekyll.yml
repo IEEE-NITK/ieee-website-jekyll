@@ -1,0 +1,20 @@
+name: Jekyll HTMLProofer
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: "Jekyll Build and Test"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Gems
+        run: sudo gem install jekyll html-proofer jekyll-paginate jemoji
+
+      - name: Build Jekyll Site
+        run: jekyll build
+
+      - name: Run HTML Proofer
+        run: htmlproofer --assume-extension ./_site --disable-external
