@@ -100,9 +100,7 @@ i {
   margin: 20px;
   transition: .5s;
 }
-.card-deck {
-  display: flex !important;
-}
+
 .card {
   background-color: #fff;
   padding: 35px;
