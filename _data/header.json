@@ -8,6 +8,10 @@
     "link": "team.html"
   },
   {
+    "name": "About Us",
+    "link": "about-us.html"
+  },
+  {
     "name": "SIGs",
     "sigs": [
       {
