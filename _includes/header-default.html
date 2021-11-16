@@ -44,18 +44,7 @@
                                         <li class="dropdown-item"><a href="{{site.url}}/{{sigs.link}}">{{sigs.name}}</a></li>
                                     {% endfor %}
                                     </ul>
-                                </li>
-                            {% elsif nav.name == "Team" %}
-                                <li class="dropdown-nav">
-                                    <a class="nav-link dropdown-toggle has-dropdown"  style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Team
-                                    </a>
-                                    <ul class="dropdown dropdown-menu">
-                                    {% for teams in nav.teams %}
-                                        <li class="dropdown-item"><a href="{{site.url}}/{{teams.link}}">{{teams.name}}</a></li>
-                                    {% endfor %}
-                                    </ul>
-                                </li>    
+                                </li>   
                             {% else %}
                                 <li><a href="{{nav.link}}">{{nav.name}}</a></li>
                             {% endif %}

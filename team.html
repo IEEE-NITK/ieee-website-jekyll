@@ -153,43 +153,79 @@ css: /assets/css/virtual-expo.css
 <div class="container-fluid colorlib-bg-white"><div class="animate-box"><hr></div></div>
 
 <!-- Exective Members -->
-{% for titles in site.data.array.teams %}
+
 <div class="team-info colorlib-bg-white">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 text-center colorlib-heading animate-box">
-                <h2>{{ titles.name }} Members</h2>
+                <h2>Executive Members</h2>
             </div>
         </div>
-        <div id="exec" class="row animate-box">
-            {% assign i = 0 %}
-            {% for item in site.data.team.members %}
-            {% assign a = item.sig | slice: 0 %} {% assign b = titles.name | slice: 0 %}
-            {% if a == b %}
-            {% assign k = i|modulo:6 %}
-            {% if k == 0 %}
-            <div class="row">
-            {% endif %}
-                <div class="col-md-2 text-center">
-                    <h4 class="member-names" style="font-size: 1.2em; font-weight: bold;">
-                        {% assign words = item.name | split: ' ' %}
-                        {% capture titlecase %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}
-                        {{ titlecase }}
-                    </h4>
-                    <br>
+        <div class="container" style="padding-bottom: 50px;">
+            <ul class="nav-pills-custom" style="padding-right: 35px; padding-left: 0px;">  
+                {% assign count = 0 %}  
+                {% for title in site.data.array.teams %}
+                    {% assign id_variable = title.name | append : "-projects-tab" %}
+                    {% assign href_variable = "#" | append : title.name | append : "-projects" %}
+                    {% assign aria_variable = title.name | append : "-projects" %}
+                    {% if count == 0 %}
+                    <li class="nav-item-custom active">
+                    {% else %}
+                    <li class="nav-item-custom">
+                    {% endif %}
+                        <a id={{id_variable}} data-toggle="pill" href={{href_variable}} role="tab" aria-controls={{aria_variable}} aria-selected="true">{{ title.name }}</a>
+                    </li>
+                    {% assign count = 1 %}
+                {% endfor %}
+            </ul>
+        </div>        
+
+        <div class="tab-content" id="pills-tabContent">
+            {% assign count_2 = 0 %}
+            {% for title in site.data.array.teams %}
+                {% assign id_variable_2 = title.name | append : "-projects" %}
+                {% assign aria_variable_2 = title.name | append : "-projects-tab" %}
+                {% if count_2 == 0 %}
+                <div class="tab-pane fade active in" id={{id_variable_2}} aria-labelledby={{aria_variable_2}} role="tabpanel">
+                {% else %}
+                <div class="tab-pane fade" id={{id_variable_2}} aria-labelledby={{aria_variable_2}} role="tabpanel"> 
+                {% endif %} 
+                    <div id="exec" class="row animate-box">
+                        {% assign len = site.data.team.members.size %}
+                        {% assign i = 0 %}{% assign count = 0 %}
+                        {% for item in site.data.team.members %}
+                            {% assign a = item.sig | slice: 0 %} {% assign b = title.name | slice: 0 %}
+                            {% if a == b %}
+                                {% assign k = i|modulo:6 %}
+                                {% if k == 0 %}
+                                <div class="row">
+                                {% endif %}
+                                    <div class="col-md-2 text-center">
+                                        <h4 class="member-names" style="font-size: 1.2em; font-weight: bold;">
+                                            {% assign words = item.name | split: ' ' %}
+                                            {% capture titlecase %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+                                            {{ titlecase }}
+                                        </h4>
+                                        <br>
+                                    </div>
+                                {% if k == 5 %}
+                                </div>
+                                {% endif %}
+                                {% assign i = i|plus:1 %}
+                            {% endif %}
+                            {% assign count = count | plus : 1 %}
+                        {% endfor %}
+                        {% if k != 5 and count == len %}
+                        </div>
+                        {% endif %}
+                    </div>
                 </div>
-            {% if k == 5 %}
-            </div>
-            {% endif %}
-            {% assign i = i|plus:1 %}
-            {% endif %}
+                {% assign count_2 = 1 %}
             {% endfor %}
         </div>
+
     </div>
 </div>
-
-<div class="container-fluid colorlib-bg-white"><div class="animate-box"><hr></div></div>
-{% endfor %}
 
 <!-- Alumni -->
 <div class="team-info colorlib-bg-white">
