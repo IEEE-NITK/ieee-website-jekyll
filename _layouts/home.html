@@ -6,7 +6,6 @@
     <script src="{{site.baseurl}}/assets/js/particles.js"></script>
     <script src="{{site.baseurl}}/assets/js/slider.js"></script>
     <link rel="stylesheet" href="{{ "/assets/css/home.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/css/blog.css" | prepend: site.baseurl }}">
 
     <script>
         $(document).ready(function () {
@@ -30,7 +29,9 @@
 
         <!-- Landing -->
 
-        <section id="home" style="height: 100vh; background-image: url(/assets/img/landing.jpg);  background-size:cover; background-position: center center;" data-section="home">
+        <section id="home"
+            style="height: 100vh; background-image: url(/assets/img/landing.jpg);  background-size:cover; background-position: center center;"
+            data-section="home">
             <div class="display-t text-center">
                 <div class="display-tc">
                     <div class="container">
@@ -149,6 +150,8 @@
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="flex-container row">
                 <div class="animate-box shadow-box">
                     <div class="logo-box">
                         <a href="https://ias.ieee.org/" target="_blank">
@@ -160,6 +163,20 @@
                     <div class="logo-box">
                         <a href="https://www.photonicssociety.org/" target="_blank">
                             <img src="/assets/img/logos/photonics.png" class="sig-img" alt="Photonics Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="animate-box shadow-box">
+                    <div class="logo-box">
+                        <a href="https://www.ieee-ras.org/" target="_blank">
+                            <img src="/assets/img/logos/ras.png" class="sig-img" alt="RAS Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="animate-box shadow-box">
+                    <div class="logo-box">
+                        <a href="https://www.grss-ieee.org/" target="_blank">
+                            <img src="/assets/img/logos/grss.png" class="sig-img" alt="GRSS Logo">
                         </a>
                     </div>
                 </div>
@@ -177,8 +194,7 @@
                         <div class="counter-entry">
                             <span class="icon"><i class="fa fa-users"></i></span>
                             <div class="desc">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="{{ site.data.team.members | size }}" data-speed="2000"
-                                    data-refresh-interval="50"></span>
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="179" data-speed="2000" data-refresh-interval="50"></span>
                                 <span class="colorlib-counter-label">Members</span>
                             </div>
                         </div>
@@ -187,19 +203,17 @@
                         <div class="counter-entry">
                             <span class="icon"><i class="fa fa-graduation-cap"></i></span>
                             <div class="desc">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="{{ site.data.team.alumni | size }}" data-speed="2000"
-                                    data-refresh-interval="50"></span>
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="146" data-speed="2000" data-refresh-interval="50"></span>
                                 <span class="colorlib-counter-label">Alumni</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 text-center animate-box">
                         <div class="counter-entry">
-                            <span class="icon"><i class="fa fa-tasks"></i></span>
+                            <span class="icon"><i class="fa fa-book"></i></span>
                             <div class="desc">
-                                <span class="colorlib-counter js-counter" data-from="0" data-to="27" data-speed="2000"
-                                    data-refresh-interval="50"></span>
-                                <span class="colorlib-counter-label">Ongoing Projects</span>
+                                <span class="colorlib-counter js-counter" data-from="0" data-to="22" data-speed="2000" data-refresh-interval="50"></span>
+                                <span class="colorlib-counter-label">Publications</span>
                             </div>
                         </div>
                     </div>
@@ -207,68 +221,69 @@
             </div>
         </div>
     </div>
+
     <!-- IEEE TWITTER SECTION -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 my-2" style="margin-top: 50px;">
-                <div class="twitter-container">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><i class="fa fa-twitter-square" aria-hidden="true"></i>
-                                IEEE Tweets
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <a class="twitter-timeline" href="https://twitter.com/IEEEorg?ref_src=twsrc%5Etfw"
-                                data-chrome="nofooter noborders" data-tweet-limit="5">Tweets by @IEEEorg</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="colorlib-intro">
+        <div class="container">
+            <div class="row text-center colorlib-heading animate-box">
+                <h2> News from IEEE </h2>
             </div>
-
-            <div class="col-md-8">
-                <div class="card" style="margin-top: 50px;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="card-img-top col-md- 4" src="/assets/img/IEEE-XploreDigitalLibrary.jpg"
-                                alt="Card image cap">
-                        </div>
-                        <div class="col-md-6">
-                            <p class="card-text">The IEEE Xplore Digital Library is a powerful resource for discovery
-                                of scientific and technical content.</p>
-                            <div class="tags">
-                                <a href="https://ieeexplore.ieee.org/">IEEE Xplore</a>
+            <div class="ieee-global-deck">
+                <div class="ieee-global-inner-1">
+                    <div class="twitter-container">
+                        <div class="panel panel-primary">
+                            <div class="panel-body">
+                                <a class="twitter-timeline" href="https://twitter.com/IEEEorg?ref_src=twsrc%5Etfw"
+                                    data-chrome="nofooter noborders" data-tweet-limit="5">Tweets by @IEEEorg</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card" style="margin-top: 25px;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="card-img-top" src="/assets/img/IEEE_Spectru.png" alt="Card image cap">
-                        </div>
-                        <div class="col-md-6">
-                            <p class="card-text">IEEE Spectrum is an award-winning technology magazine and the
-                                flagship publication of IEEE.</p>
-                            <div class="tags">
-                                <a href="https://spectrum.ieee.org/">IEEE Spectrum</a>
+                <div class="ieee-global-inner-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="card-img-top col-md- 4" src="/assets/img/IEEE-XploreDigitalLibrary.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text">The IEEE Xplore Digital Library is a powerful resource for
+                                    discovery
+                                    of scientific and technical content.
+                                </p>
+                                <a href="https://ieeexplore.ieee.org/" class="btn btn-primary btn-outline"
+                                    target="_blank">IEEE Xplore</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" style="margin-top: 25px;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="card-img-top" src="/assets/img/IEEE-Blue.jpg" alt="Card image cap">
-                        </div>
-                        <div class="col-md-6">
 
-                            <p class="card-text">Join IEEE, the world’s largest professional organization devoted to
-                                engineering and the applied sciences.</p>
-                            <div class="tags">
-                                <a href="https://www.ieee.org/content/ieee-org/en/membership/join/">Join IEEE</a>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="card-img-top" src="/assets/img/IEEE_Spectru.png" alt="Card image cap">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text">IEEE Spectrum is an award-winning technology magazine and the
+                                    flagship publication of IEEE.
+                                </p>
+                                <a href="https://spectrum.ieee.org/" class="btn btn-primary btn-outline"
+                                    target="_blank">IEEE Spectrum</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="card-img-top" src="/assets/img/IEEE-Blue.jpg" alt="Card image cap">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="card-text">Join IEEE, the world’s largest professional organization devoted to
+                                    engineering and the applied sciences.
+                                </p>
+                                <a href="https://www.ieee.org/content/ieee-org/en/membership/join/"
+                                    class="btn btn-primary btn-outline" target="_blank">Join IEEE</a>
                             </div>
                         </div>
                     </div>
@@ -276,7 +291,6 @@
             </div>
         </div>
     </div>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     <!--Recent Blogs -->
     <div class="colorlib-intro">
@@ -292,7 +306,9 @@
                 </div>
 
                 <div class="row text-center mt-5">
-                    <p><a href="https://ieee.nitk.ac.in/blog/" title="IEEE NITK Blog" class="btn btn-primary btn-outline with-arrow" target="_blank">READ ALL BLOGS<i class="fa fa-arrow-right"></i></a></p>
+                    <p><a href="https://ieee.nitk.ac.in/blog/" title="IEEE NITK Blog"
+                            class="btn btn-primary btn-outline with-arrow" target="_blank">READ ALL BLOGS<i
+                                class="fa fa-arrow-right"></i></a></p>
                 </div>
                 <div id="event-modals"></div>
             </div>
@@ -304,6 +320,7 @@
     </div>
 
     <script src="{{site.baseurl}}/assets/js/main.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>
         $.ajax({
             method: "get",
@@ -318,31 +335,28 @@
             var i = 1;
 
             var html_str = '<div class="card-deck">';
-            
-            if (i<=3) {
+
+            if (i <= 3) {
                 for (items in blog) {
                     if (i > 3)
                         break;
 
-                var category = blog[items].category;
+                    var category = blog[items].category;
 
-                html_str += `<div class="card">`;
-                html_str += `<article class="blog-card-article" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">`;
-                html_str += `<span class="card-label"><a href="https://ieee.nitk.ac.in/blog/series/#${category.toLowerCase()}">${category.toUpperCase()}</a></span>`;
-                html_str += `<h3 class="card-title"><a href="${blog[items].url}">${blog[items].title}</a></h3>`;
-                html_str += `<p class="author-wrap"><i class="fa fa-calendar"></i><span class="date">&nbsp;&nbsp;${blog[items].date.split(" ")[1]}&nbsp${blog[items].date.split(" ")[0]}, ${blog[items].date.split(" ")[2]}</span></p>`;
-                html_str += `<p class="author-wrap"><span class="author-img" style="background-image: url(${blog[items].author_image}), url(https://ieee.nitk.ac.in/blog/assets/img/authors/blog-author.jpg);"></span>`;    
-                html_str += `<span class="author">by ${blog[items].author}</span></p>` ;
-                html_str += `</article></div>`;
+                    html_str += `<div class="card blog-card">`;
+                    html_str += `<article class="blog-card-article" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">`;
+                    html_str += `<span class="card-label"><a href="https://ieee.nitk.ac.in/blog/series/#${category.toLowerCase()}">${category.toUpperCase()}</a></span>`;
+                    html_str += `<h3 class="card-title"><a href="${blog[items].url}">${blog[items].title}</a></h3>`;
+                    html_str += `<p class="author-wrap"><i class="fa fa-calendar"></i><span class="date">&nbsp;&nbsp;${blog[items].date.split(" ")[1]}&nbsp${blog[items].date.split(" ")[0]}, ${blog[items].date.split(" ")[2]}</span></p>`;
+                    html_str += `<p class="author-wrap"><span class="author-img" style="background-image: url(${blog[items].author_image}), url(https://ieee.nitk.ac.in/blog/assets/img/authors/blog-author.jpg);"></span>`;
+                    html_str += `<span class="author">by ${blog[items].author}</span></p>`;
+                    html_str += `</article></div>`;
 
                     i += 1;
                 }
             }
-
-        }
-        html_str += `</div>`;
-        $("#blogs").html(html_str);
-
+            html_str += `</div>`;
+            $("#blogs").html(html_str);
         }
     </script>
 </body>
