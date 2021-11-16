@@ -6,6 +6,7 @@
     <script src="{{site.baseurl}}/assets/js/particles.js"></script>
     <script src="{{site.baseurl}}/assets/js/slider.js"></script>
     <link rel="stylesheet" href="{{ "/assets/css/home.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/blog.css" | prepend: site.baseurl }}">
 
     <script>
         $(document).ready(function () {
@@ -28,9 +29,8 @@
         {% include header-default.html %}
 
         <!-- Landing -->
-        <section id="home"
-            style="height: 100vh; background-image: url(/assets/img/landing.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;"
-            data-section="home">
+
+        <section id="home" style="height: 100vh; background-image: url(/assets/img/landing.jpg);  background-size:cover; background-position: center center;" data-section="home">
             <div class="display-t text-center">
                 <div class="display-tc">
                     <div class="container">
@@ -290,6 +290,11 @@
                 <div class="animate-box" id="blogs">
                     <!-- content -->
                 </div>
+
+                <div class="row text-center mt-5">
+                    <p><a href="https://ieee.nitk.ac.in/blog/" title="IEEE NITK Blog" class="btn btn-primary btn-outline with-arrow" target="_blank">READ ALL BLOGS<i class="fa fa-arrow-right"></i></a></p>
+                </div>
+                <div id="event-modals"></div>
             </div>
             <div id="event-modals"></div>
         </div>
@@ -311,36 +316,33 @@
         function add_blogs(result) {
             blog = result;
             var i = 1;
-            var html_str = '';
-            if (i <= 3) {
+
+            var html_str = '<div class="card-deck">';
+            
+            if (i<=3) {
                 for (items in blog) {
-                    if (i > 3) { break; }
+                    if (i > 3)
+                        break;
 
-                    str = blog[items].author;
-                    str = str.split(" ").join("");
-                    author_img_url = `https://ieee.nitk.ac.in/blog/assets/img/authors/${str}.jpeg`;
+                var category = blog[items].category;
 
-                    html_str += `<div class="card-deck"><div><article role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">`;
-                    html_str += `<h2><a href="` + blog[items].url + `">` + blog[items].title + `</a></h2><p class="author-wrap">`;
-                    html_str += `<span class="author-img" style="background-image: url(https://ieee.nitk.ac.in/blog/assets/img/authors/${str}.jpeg), url(https://ieee.nitk.ac.in/blog/assets/img/authors/blog-author.jpg);"></span>`;
-                    html_str += `<span class="author">by &nbsp` + blog[items].author + `&nbsp; | &nbsp;` + blog[items].date.split(" ")[1] + `&nbsp` + blog[items].date.split(" ")[0] + `,` + blog[items].date.split(" ")[2] + `</span></p>`;
-                    html_str += `<div class="category">`;
-
-                    var tag = blog[items].category;
-                    tag = tag.replace(" and ", ",");
-                    const tag_items = tag.split(",");
-                    for (tag_item in tag_items) {
-                        if (tag_items[tag_item] != "") {
-                            html_str += `<a href="https://ieee.nitk.ac.in/blog/tags/#${tag_items[tag_item].trim().split(" ").join("-").toLowerCase()}">` + tag_items[tag_item] + `</a>`;
-                        }
-                    }
-
-                    html_str += `</div></article></div></div>`;
+                html_str += `<div class="card">`;
+                html_str += `<article class="blog-card-article" role="article" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">`;
+                html_str += `<span class="card-label"><a href="https://ieee.nitk.ac.in/blog/series/#${category.toLowerCase()}">${category.toUpperCase()}</a></span>`;
+                html_str += `<h3 class="card-title"><a href="${blog[items].url}">${blog[items].title}</a></h3>`;
+                html_str += `<p class="author-wrap"><i class="fa fa-calendar"></i><span class="date">&nbsp;&nbsp;${blog[items].date.split(" ")[1]}&nbsp${blog[items].date.split(" ")[0]}, ${blog[items].date.split(" ")[2]}</span></p>`;
+                html_str += `<p class="author-wrap"><span class="author-img" style="background-image: url(${blog[items].author_image}), url(https://ieee.nitk.ac.in/blog/assets/img/authors/blog-author.jpg);"></span>`;    
+                html_str += `<span class="author">by ${blog[items].author}</span></p>` ;
+                html_str += `</article></div>`;
 
                     i += 1;
                 }
             }
-            $("#blogs").html(html_str);
+
+        }
+        html_str += `</div>`;
+        $("#blogs").html(html_str);
+
         }
     </script>
 </body>
