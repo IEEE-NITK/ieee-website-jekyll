@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Piston
+css : /asstes/css/virtual-expo.css
 ---
 
 <link rel="stylesheet" href="/assets/css/sig.css">
@@ -98,7 +99,7 @@ title: Piston
             {% for year in site.data.projects.piston %}
         
                 {% assign id_variable_2 = year[0] | append : "-projects" %}
-                {% assign aria_variable = year[0] | append : "-projects-tab" %}
+                {% assign aria_variable_2 = year[0] | append : "-projects-tab" %}
         
                 {% if count_2 == 0 %}
                 <div class="tab-pane fade active in" id={{id_variable_2}} role="tabpanel" aria-labelledby={{aria_variable_2}}>
