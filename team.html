@@ -222,6 +222,9 @@ css: /assets/css/virtual-expo.css
                 </div>
                 {% assign count_2 = 1 %}
             {% endfor %}
+            {% if k != 5 and count == len %}
+            </div>
+            {% endif %}
         </div>
 
     </div>

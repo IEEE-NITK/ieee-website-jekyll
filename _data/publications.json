@@ -1,5 +1,35 @@
 [
     { 
+        "title": "Distributed Adaptive Video Streaming using Inter-Server Data Distribution and Agent-based Adaptive Load Balancing",
+        "abstract": "2020 16th International Conference on Distributed Computing in Sensor Systems (DCOSS), 2020, pp. 273-280, M. Bhowmik, A. Raghunandan and B. Rudra"
+    },
+
+    { 
+        "title": "Design and Analysis of Single SiC MOSFET Switch Flyback Converter based Control Power Supply for Renewable Applications",
+        "abstract": "2020 International Conference on Power, Instrumentation, Control and Computing (PICC), 2020, pp. 1-5, S. Jagannath, N. Agarwal, S. Balasubramaniasarma, K. W. Ma and V. B"
+    },
+
+    { 
+        "title": "Trimodal Attention Module for Multimodal Sentiment Analysis (Student Abstract).",
+        "abstract": "Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 34. No. 10. 2020 - Anirudh B H and Fatiha Sadat"
+    },
+
+    { 
+        "title": "Simulation study of multilayer hybrid plasmonic switch using Franz–Keldysh effect",
+        "abstract": "Optical Engineering 59(4), 040501 - Santosh Kumar Sahu, Rohit Khoja, Sumit Kanu, Aman Kumar, and Mandeep Singh"
+    },
+
+    { 
+        "title": "A Hybrid Graph Coloring Algorithm for GPUs",
+        "abstract": "12th HIPC Student Research Symposium - Shanthanu S Rai, Rohit M P and Sreepathi Pai"
+    },
+
+    { 
+        "title": "Modelling and analysis of lower metal on-chip interconnect using physical fabrication parameters",
+        "abstract": "IEEE-iSES, 2019 - Aditya Kulkarni, Iteesha V A and Sahith S R"
+    },
+
+    { 
         "title": "Resource Provisioning Framework for IoT Applications in Fog Computing Environment",
         "abstract": "12th IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS) 2018 - Rakshith G"
     },
@@ -77,26 +107,5 @@
     { 
         "title": "Travel Recommendation System Using Geotagged Photos",
         "abstract": "(ICCCT-2017) Proceedings of the 7th International Conference on Computer and Communication Technology - Akanksha Kumari"
-    },
-
-    { 
-        "title": "A Hybrid Graph Coloring Algorithm for GPUs",
-        "abstract": "12th HIPC Student Research Symposium - Shanthanu S Rai, Rohit M P and Sreepathi Pai"
-    },
-
-    { 
-        "title": "Modelling and analysis of lower metal on-chip interconnect using physical fabrication parameters",
-        "abstract": "IEEE-iSES, 2019 - Aditya Kulkarni, Iteesha V A and Sahith S R"
-    },
-
-    { 
-        "title": "Simulation study of multilayer hybrid plasmonic switch using Franz–Keldysh effect",
-        "abstract": "Optical Engineering 59(4), 040501 - Santosh Kumar Sahu, Rohit Khoja, Sumit Kanu, Aman Kumar, and Mandeep Singh"
-    },
-
-    { 
-        "title": "Trimodal Attention Module for Multimodal Sentiment Analysis (Student Abstract).",
-        "abstract": "Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 34. No. 10. 2020 - Anirudh B H and Fatiha Sadat"
     }
-
 ]

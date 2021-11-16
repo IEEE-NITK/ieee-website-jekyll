@@ -8,10 +8,10 @@ title: Publications
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 colorlib-heading">
-                <h2>List of Papers Submitted to Conferences by IEEE NITK Members</h2>
-                <ul class="animate-box">
+                <h2 class="animate-box">List of Papers Submitted to Conferences by IEEE NITK Members</h2>
+                <ul>
                     {% for item in site.data.publications %}
-                        <li><strong>"{{ item.title }}"</strong>, {{ item.abstract }}</li><br>
+                        <li class="animate-box"><strong>{{ item.title }}</strong>, {{ item.abstract }}</li><br>
                     {% endfor %}
                 </ul>
             </div>
