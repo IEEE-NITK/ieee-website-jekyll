@@ -141,7 +141,8 @@ title: Team
             </div>
         </div>
         <div id="exec" class="row animate-box">
-            {% assign i = 0 %}
+            {% assign len = site.data.team.members.size %}
+            {% assign i = 0 %}{% assign count = 0 %}
             {% for item in site.data.team.members %}
             {% assign a = item.sig | slice: 0 %} {% assign b = titles.name | slice: 0 %}
             {% if a == b %}
@@ -162,7 +163,11 @@ title: Team
             {% endif %}
             {% assign i = i|plus:1 %}
             {% endif %}
+            {% assign count = count | plus : 1 %}
             {% endfor %}
+            {% if k != 5 and count == len %}
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>

@@ -2,7 +2,12 @@
     "List of Awards by IEEE NITK": [
 
         {
-            "title": "Exemplary Student Branch Award",
+            "title": "Outstanding Large Student Branch, IEEE Bangalore Section",
+            "details": "2020  "
+        },
+
+        {
+            "title": " Exemplary Student Branch Award ",
             "details": "2007, 2013, 2015"
         },
 
@@ -55,6 +60,21 @@
     ],
 
     "List of Achievements by IEEE NITK Members": [
+        
+        {
+            "title": "Outstanding Young Professionals Volunteer, IEEE Bangalore Section - Prof. Mohit P. Tahiliani",
+            "details": " 2020 "
+        },
+
+        {
+            "title": "1 team in the Top 50, 3 in the Top 100 and 4 in the Top 150 at IEEEXtreme",
+            "details": " 2020 "
+        },
+
+        {
+            "title": "Top 3 spots at the IEEEXtreme Mock Coding Contest conducted by IEEE R10 SAC",
+            "details": " 2020 "
+        },
 
         {
             "title": "IEEE Outstanding Large Student Branch Counselor - Prof. MS Bhat",
@@ -95,7 +115,17 @@
     "List of Achievements by CAS IEEE NITK": [
 
         {
-            "title": "Quadcopter Project",
+            "title": "CAS Outstanding Large Student Branch Chapter Faculty Advisor, IEEE Bangalore Section - Prof. BV Perumal",
+            "details": "2020"
+        },
+
+        {
+            "title": "CAS Outstanding Large Student Branch Chapter, IEEE Bangalore Section",
+            "details": "2020"
+        },
+
+        {
+            "title": " Quadcopter project ",
             "details": "Awarded prestigious IEEE student enterprise award"
         },
 

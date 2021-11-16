@@ -29,8 +29,8 @@
                                         Affinity Groups
                                     </a>
                                     <ul class="dropdown dropdown-menu">
-                                    {% for sigs in nav.groups %}
-                                        <li class="dropdown-item"><a href="{{sigs.link}}">{{sigs.name}}</a></li>
+                                    {% for groups in nav.groups %}
+                                        <li class="dropdown-item"><a href="{{site.url}}/{{groups.link}}">{{groups.name}}</a></li>
                                     {% endfor %}
                                     </ul>
                                 </li>
